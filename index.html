@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أخصائي التحليل المتميز</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="#home"><span class="brand-mark">أ</span><span>أخصائي التحليل المتميز</span></a>
+<nav><a href="#courses">الكورسات</a><a href="#why">لماذا المنصة؟</a><a href="#buy">الشراء</a><a href="#faq">الأسئلة</a></nav>
+<div id="authArea"><button class="btn btn-primary btn-small" data-auth="login">تسجيل الدخول</button></div>
+</div></header>
+
+<section id="home" class="hero"><div class="container hero-grid"><div>
+<div class="eyebrow">أكاديمية تعليمية متخصصة</div>
+<h1>طوّر مهاراتك في <span>التحليل المتميز</span></h1>
+<p class="hero-text">تعلم الكيمياء السريرية من خلال كورسات منظمة، فيديوهات تعليمية وملفات مساعدة مصممة لتسهيل الفهم والتطبيق.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#courses">استعرض الكورسات</a><a class="btn btn-outline" href="#why">اعرف المزيد</a></div>
+<div class="trust-row"><span>🎓 محتوى متخصص</span><span>📚 فيديو + ملفات</span><span>📱 يعمل على الهاتف والكمبيوتر</span></div>
+</div><div class="hero-card"><div class="course-preview"><div class="preview-top"><span>ACADEMY</span><span>LEARNING</span></div><div class="play">▶</div><h3>الكيمياء السريرية</h3><p>تعلم بخطوات واضحة ومنهج عملي.</p><div class="progress"><span></span></div><small>مسار تعليمي منظم</small></div></div></div></section>
+
+<section id="courses" class="section"><div class="container">
+<div class="section-head"><div><div class="eyebrow">اختَر مسارك</div><h2>الكورسات المتاحة</h2></div><p>الكورسات المنشورة يتم تحميلها مباشرة من قاعدة بيانات المنصة.</p></div>
+<div id="courseGrid" class="course-grid"><div class="loading-card">جاري تحميل الكورسات...</div></div>
+</div></section>
+
+<section id="why" class="section dark-section"><div class="container">
+<div class="section-head"><div><div class="eyebrow">لماذا المنصة؟</div><h2>مش مجرد فيديوهات</h2></div></div>
+<div class="features">
+<div class="feature"><b>01</b><h3>مسار واضح</h3><p>المحتوى مرتب بحيث تعرف ماذا تتعلم وماذا تفعل بعد كل درس.</p></div>
+<div class="feature"><b>02</b><h3>تجربة مريحة</h3><p>واجهة سريعة ومتجاوبة تعمل على الكمبيوتر والموبايل.</p></div>
+<div class="feature"><b>03</b><h3>محتوى للأعضاء</h3><p>بعد تأكيد الشراء سيظهر المحتوى المخصص لحسابك فقط.</p></div>
+<div class="feature"><b>04</b><h3>تحديثات مستمرة</h3><p>يمكن تطوير المحتوى والمنصة لاحقًا بدون إعادة بناء الموقع من الصفر.</p></div>
+</div></div></section>
+
+<section id="buy" class="section"><div class="container payment-box">
+<div><div class="eyebrow">طريقة الشراء</div><h2>شراء بسيط وآمن</h2><p>الدفع عبر InstaPay أو المحفظة، ثم مراجعة التحويل وتفعيل الكورس.</p></div>
+<a class="btn btn-primary" href="#courses">اختيار كورس</a>
+</div></section>
+
+<section id="faq" class="section faq"><div class="container">
+<div class="section-head"><div><div class="eyebrow">FAQ</div><h2>أسئلة شائعة</h2></div></div>
+<details><summary>كيف يتم شراء الكورس؟</summary><p>أنشئ حسابًا، اختر الكورس، ثم اتبع تعليمات الدفع. بعد تأكيد التحويل يتم تفعيل الكورس.</p></details>
+<details><summary>متى يظهر المحتوى بعد الدفع؟</summary><p>بعد مراجعة الدفع وقبول العملية يظهر الكورس في حسابك.</p></details>
+<details><summary>هل يمكن الوصول من الهاتف؟</summary><p>نعم، الموقع متجاوب مع الهاتف والكمبيوتر.</p></details>
+<details><summary>هل يمكن منع نسخ المحتوى 100%؟</summary><p>يمكن حماية الوصول للمحتوى، لكن لا يمكن ضمان منع تصوير الشاشة أو النسخ بنسبة 100% في المتصفح.</p></details>
+</div></section>
+
+<div id="authModal" class="modal hidden"><div class="modal-card">
+<button class="modal-close" data-close="authModal">×</button><div class="eyebrow">حسابك</div><h2 id="authTitle">تسجيل الدخول</h2>
+<form id="authForm">
+<label>البريد الإلكتروني<input id="authEmail" type="email" required></label>
+<label>كلمة المرور<input id="authPassword" type="password" minlength="6" required></label>
+<label id="nameField" class="hidden">الاسم<input id="authName" type="text"></label>
+<label id="phoneField" class="hidden">رقم الهاتف<input id="authPhone" type="tel"></label>
+<button class="btn btn-primary full" type="submit" id="authSubmit">دخول</button>
+</form><button class="text-btn" id="toggleAuth">إنشاء حساب جديد</button><p id="authMessage" class="form-message"></p>
+</div></div>
+
+<div id="courseModal" class="modal hidden"><div class="modal-card wide"><button class="modal-close" data-close="courseModal">×</button><div id="courseDetails"></div></div></div>
+
+<footer><div class="container footer-inner"><span>© <span id="year"></span> أخصائي التحليل المتميز</span><span>Dr. Abdullah</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body></html>
